@@ -1,0 +1,464 @@
+@charset "utf-8";
+*,
+ :before,
+ :after {
+    box-sizing: border-box;
+}
+
+h2,
+li,
+a {
+    line-height: 1;
+    font-weight: normal;
+}
+
+body,
+h2,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+a,
+a:hover {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a {
+    color: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+span,
+label {
+    display: inline-block;
+}
+
+input,
+textarea,
+button {
+    font-size: 1em;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 0.5em 1em;
+    vertical-align: top;
+}
+
+
+input[type="submit"],
+button {
+    cursor: pointer;
+}
+
+input[type="file"] {
+    max-width: 13.2em;
+    border: none;
+    padding: 0;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+/* COLOR */
+
+.bg-fff {
+    background-color: #fff;
+}
+
+.bg-000 {
+    background-color: #000;
+}
+
+.text-fff {
+    color: #fff;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+
+/* GRID */
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+[class~="column"] {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .wrap {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+
+/* eXtra small Grid */
+
+
+
+
+/* Large Grid */
+
+@media (min-width: 1201px) {
+    .column.l-1 {
+        width: 8.33%;
+    }
+    .column.l-2 {
+        width: 16.66%;
+    }
+    .column.l-3 {
+        width: 25%;
+    }
+    .column.l-4 {
+        width: 33.33%;
+    }
+    .column.l-5 {
+        width: 41.66%;
+    }
+    .column.l-6 {
+        width: 50%;
+    }
+    .column.l-7 {
+        width: 58.33%;
+    }
+    .column.l-8 {
+        width: 66.66%;
+    }
+    .column.l-9 {
+        width: 75%;
+    }
+    .column.l-10 {
+        width: 83.33%;
+    }
+    .column.l-11 {
+        width: 91.66%;
+    }
+    .column.l-12 {
+        width: 100%;
+    }
+    .list-l-1>[class~="column"] {
+        width: 100%;
+    }
+    .list-l-2>[class~="column"] {
+        width: 50%;
+    }
+    .list-l-3>[class~="column"] {
+        width: 33.33%;
+    }
+    .list-l-4>[class~="column"] {
+        width: 25%;
+    }
+    .list-l-5>[class~="column"] {
+        width: 20%;
+    }
+    .list-l-6>[class~="column"] {
+        width: 16.66%;
+    }
+    .list-l-7>[class~="column"] {
+        width: 14.2857%;
+    }
+    .list-l-8>[class~="column"] {
+        width: 12.5%;
+    }
+    .list-l-9>[class~="column"] {
+        width: 11.11%;
+    }
+    .list-l-10>[class~="column"] {
+        width: 10%;
+    }
+    .list-l-11>[class~="column"] {
+        width: 9.091%;
+    }
+    .list-l-12>[class~="column"] {
+        width: 8.33%;
+    }
+}
+
+
+/* CLASSES */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+.nav>li {
+    float: left;
+}
+
+.nav>li>a {
+    display: block;
+}
+
+.list-inline>li {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.list-flex {
+    display: flex;
+    -webkit-display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+
+/* CARD */
+
+.oh {
+    position: relative;
+    overflow: hidden;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-1 {
+    color: black;
+}
+
+
+span {
+    display: inline-block;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+
+
+/*CONTENTS CSS */
+
+.container {
+    display: flex;
+    display: -webkit-flex;
+    padding-left: 200px;
+    transition: 0.5s;
+}
+
+.container.is-click {
+    padding-left: 0;
+}
+
+.avatar {
+    margin: 50px 1em;
+    position: relative;
+    display: table;
+}
+
+.avatar img {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.avatarName {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 1em;
+    color: #fff;
+    line-height: 1.5;
+}
+
+
+/* SIDE CSS */
+
+.sideArea {
+    width: 200px;
+    min-width: 200px;
+    background: #2A3F54;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.container.is-click .sideArea {
+    left: -200px;
+}
+
+.sideArea li>a {
+    display: block;
+    color: #fff;
+    padding: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sideArea li>a:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.sideArea li>a>.fa {
+    width: 1em;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.sideMenu {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+.mainArea {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+.name {
+    color: #2A3F54;
+    padding: 1em 0;
+    cursor: pointer;
+}
+
+.name>span {
+    margin-left: 10px;
+}
+
+.mainContent {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 0;
+    }
+    .container .sideArea {
+        left: -200px;
+    }
+    .container.is-click {
+        padding-left: 200px;
+    }
+    .container.is-click .sideArea {
+        left: 0;
+    }
+}
+
+
+/* ADMIN FORM */
+
+.form {
+    background: #fff;
+    border: 1px solid #dedede;
+}
+
+.formHeader {
+    padding: 1em;
+    background:gray;
+    border-bottom: 1px solid black;
+}
+
+.formBody {
+    width: 100%;
+    padding: 20px 20px 10px 20px;
+}
+
+
+
+.btnSave
+ {
+    padding: 0.5em;
+    margin: 0 2px;
+}
+
+.btnSave {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 0.95em;
+}
+
+.inputGroup {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.inputGroup>span:first-child {
+    width: 100px;
+    padding-bottom: 10px;
+    text-align: right;
+    padding-right: 10px;
+    vertical-align: top;
+}
+
+
+.form textarea {
+    width: 100%;
+    min-height: 20em;
+}

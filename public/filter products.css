@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root{
+    --white: #fff;
+    --black:#1c2b2d;
+    --blue:#31326f;
+    --light-blue:#005490;
+    --color-red:	#D00000 ;
+    --color-green:#80ff00;
+    --color-dark-gray:#a9a9a9;
+  --color-yellow:#ffff00;
+ 
+
+
+
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size: 20px;
+}
+body{
+    font-family: 'Open Sans', 'sans-serif';
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+img{
+    /*width:100%;*/
+    
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    background-color: black;
+    padding:1rem; 
+}
+header h1{
+    font-size: 80px;
+    line-height: 2;
+    color:var(--color-red);
+}
+form input{
+width: 30rem;
+padding:1px;
+border:none;
+outline: none;
+font-size:25px;
+border-radius: 5px;
+margin-bottom: 2rem;
+border-bottom: 2px solid var(--color-red) ;
+}
+
+.btn{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    background-color: var(--color-green);
+    padding:5px;
+border-radius: 3px;
+margin-right: 1rem;
+
+
+}
+.active{
+background-color: var(--color-yellow);
+font-size: 12px;
+text-decoration: none;
+color: black;
+padding:6px;
+border-radius: 3px;
+margin-right: 1rem;
+
+
+}
+#products-storage{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    column-gap: 20px;
+    row-gap: 15px;
+}
+
+.store-product{
+    border: 1px solid white;
+    border-radius: 3px;
+    max-width: 25rem;
+}
+.product-details{
+    text-align: center;
+padding-bottom: 1rem;
+background-color: white;
+
+}
+.product-details h2{
+    color: chocolate;
+    font-size: 28px;
+    font-weight: 500;
+    margin-right: 180px;
+}
+.product-details p{
+    font-size: 20px;
+    padding-bottom: 1rem;
+    color:blue;
+    font-weight: 700;
+    margin-right: 200px;
+}
+.product-details p span{
+    text-decoration: line-through;
+    color:black;
+}
+.product-details a{
+font-size: 1rem;
+text-decoration: none;
+background-color: darkcyan;
+color: white;
+padding: .5rem 1rem;
+border-radius: 3px;
+margin-right: 200px;
+}
+
+.product-details a:hover{
+    background-color: var(--color-dark-gray);
+}

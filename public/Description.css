@@ -1,0 +1,87 @@
+body{
+	font-family: "Times New Roman";
+	
+
+}
+.navbar{
+	background-color: rgb(107, 57, 57);
+}
+
+.navbar .navbar-link{
+	
+	font-size: 20px;
+	text-transform: uppercase;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.navbar-toggler{
+	outline: none!important;
+}
+
+footer {
+    background-color:gray; 
+    width: 100%;
+    text-align: left;
+    font:italic 17px Helvetica;
+    padding: 55px 50px;
+    margin-top: 50px;
+    bottom: 0;
+}
+
+.footer-navigation h3 a {
+    margin-top: 2px;
+    font: normal 36px arial;
+    margin-bottom: 20px;
+    color: yellow;
+  }
+
+
+.footer-navigation p.links a {
+    color: black;
+  
+}
+
+.fa.footer-contacts-icon {
+
+    color:black;
+    font-size: 18px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 38px;
+    margin: 10px 15px 10px 0;
+   position: relative; left: 780px; top: -60px;
+}
+
+
+/*-----------------------*/
+
+.footer-48201 h3 a{
+    
+    margin-top: 2px;
+    font: normal 36px arial;
+    margin-bottom: 20px;
+    color: yellow;
+}
+
+.cart-image{
+    background-image: url("NYX concealer.jpg");
+    
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
